@@ -90,9 +90,19 @@ public class ContactBook {
         return found;
     }
 
-    // TODO
     // Pre: hasPhoneNumber(phoneNumber)
-    public String searchByPhoneNumber(int phoneNumber) { return ""; }
+    public String searchByPhoneNumber(int phoneNumber) {
+        int i = 0;
+        String result = "";
+        boolean found = false;
+        while (i<counter && !found)
+            if (contacts[i].getPhone() == phoneNumber)
+                found = true;
+            else
+                i++;
+        if (found) result = contacts[i].getName();
+        return result;
+    }
 
     // TODO
     public boolean hasPhoneNumber(int phoneNumber) { return false; }
