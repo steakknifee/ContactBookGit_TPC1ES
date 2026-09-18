@@ -104,7 +104,7 @@ public class ContactBook {
     }
 
     public boolean hasPhoneNumber(int phoneNumber) {
-        return searchByPhoneNumber(phoneNumber).isEmpty();
+        return !searchByPhoneNumber(phoneNumber).isEmpty();
     }
 
     private void resize() {
