@@ -93,7 +93,7 @@ public class ContactBook {
     public String searchByPhoneNumber(int phoneNumber) {
         int i = 0;
         boolean found = false;
-        while (i<counter && !found)
+        while (i<counter && !found) {
             if (contacts[i].getPhone() == phoneNumber)
                 found = true;
             else
