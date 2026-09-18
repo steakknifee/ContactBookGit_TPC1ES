@@ -90,7 +90,6 @@ public class ContactBook {
         return found;
     }
 
-    // Pre: hasPhoneNumber(phoneNumber)
     public String searchByPhoneNumber(int phoneNumber) {
         int i = 0;
         String result = "";
