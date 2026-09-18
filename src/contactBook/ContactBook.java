@@ -90,6 +90,13 @@ public class ContactBook {
         return found;
     }
 
+    // TODO
+    // Pre: hasPhoneNumber(phoneNumber)
+    public String searchByPhoneNumber(int phoneNumber) { return ""; }
+
+    // TODO
+    public boolean hasPhoneNumber(int phoneNumber) { return false; }
+
     private void resize() {
         Contact tmp[] = new Contact[2*contacts.length];
         for (int i=0;i<counter; i++)
