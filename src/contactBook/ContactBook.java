@@ -98,8 +98,11 @@ public class ContactBook {
                 found = true;
             else
                 i++;
-        if (found) result = contacts[i].getName();
-        return result;
+        }
+        if (found) {
+            return contacts[i].getName();
+        }
+        return "";
     }
 
     public boolean hasPhoneNumber(int phoneNumber) {
