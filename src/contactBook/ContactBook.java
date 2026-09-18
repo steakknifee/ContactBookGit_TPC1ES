@@ -92,7 +92,6 @@ public class ContactBook {
 
     public String searchByPhoneNumber(int phoneNumber) {
         int i = 0;
-        String result = "";
         boolean found = false;
         while (i<counter && !found)
             if (contacts[i].getPhone() == phoneNumber)
@@ -104,7 +103,7 @@ public class ContactBook {
     }
 
     public boolean hasPhoneNumber(int phoneNumber) {
-        return searchByPhoneNumber(phoneNumber).isEmpty();
+        return !searchByPhoneNumber(phoneNumber).isEmpty();
     }
 
     private void resize() {
