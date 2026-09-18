@@ -104,8 +104,9 @@ public class ContactBook {
         return result;
     }
 
-    // TODO
-    public boolean hasPhoneNumber(int phoneNumber) { return false; }
+    public boolean hasPhoneNumber(int phoneNumber) {
+        return searchByPhoneNumber(phoneNumber).isEmpty();
+    }
 
     private void resize() {
         Contact tmp[] = new Contact[2*contacts.length];
